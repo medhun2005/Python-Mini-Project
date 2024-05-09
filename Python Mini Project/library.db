@@ -1,0 +1,16 @@
+CREATE DATABASE IF NOT EXISTS library;
+
+USE library;
+
+CREATE TABLE IF NOT EXISTS books (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    author VARCHAR(255) NOT NULL,
+    status VARCHAR(255) NOT NULL
+);
+
+-- Sample data for testing
+INSERT INTO books (title, author, status) VALUES ('The Great Gatsby', 'F. Scott Fitzgerald', 'Available');
+INSERT INTO books (title, author, status) VALUES ('To Kill a Mockingbird', 'Harper Lee', 'Available');
+INSERT INTO books (title, author, status) VALUES ('1984', 'George Orwell', 'Issued');
+INSERT INTO books (title, author, status) VALUES ('Pride and Prejudice', 'Jane Austen', 'Available');
